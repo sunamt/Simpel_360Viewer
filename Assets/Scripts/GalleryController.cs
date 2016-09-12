@@ -35,26 +35,45 @@ public class GalleryController : MonoBehaviour
 
     public int index;
     int indexMax;
-    GameObject[] cubes;
+    GameObject[] leftCubes;
+    GameObject[] rightCubes;
 
     void Start()
     {
-        string path = "LeftCubeMaps"; // Resources/path
-        cubes = Resources.LoadAll<GameObject>(path);
-        indexMax = cubes.Length-1;
-        Instantiate(cubes[0]);
+        string leftPath = "LeftCubeMaps"; // Resources/path
+        string rightPath = "RightCubeMaps";
+
+        leftCubes = Resources.LoadAll<GameObject>(leftPath);
+        rightCubes = Resources.LoadAll<GameObject>(rightPath);
+
+        indexMax = leftCubes.Length - 1;
+        Instantiate(leftCubes[0]);
+        Instantiate(rightCubes[0]);
     }
 
     public void ChangeCubeMap(bool forward)
     {
-        Destroy(GameObject.Find(cubes[index].name+"(Clone)"));
+        Destroy(GameObject.Find(leftCubes[index].name + "(Clone)"));
         if (forward)
             index++;
         else
             index--;
         IsIndexOutOfBounds();
-        Instantiate(cubes[index]);
+        Instantiate(leftCubes[index]);
 
+    }
+
+    public void ChangeCubeMapStereo(bool forward)
+    {
+        Destroy(GameObject.Find(leftCubes[index].name + "(Clone)"));
+        Destroy(GameObject.Find(rightCubes[index].name + "(Clone)"));
+        if (forward)
+            index++;
+        else
+            index--;
+        IsIndexOutOfBounds();
+        Instantiate(leftCubes[index]);
+        Instantiate(rightCubes[index]);
     }
 
     void IsIndexOutOfBounds()
@@ -68,9 +87,9 @@ public class GalleryController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.N))
-            ChangeCubeMap(true);
+            ChangeCubeMapStereo(true);
         if (Input.GetKeyDown(KeyCode.M))
-            ChangeCubeMap(false);
+            ChangeCubeMapStereo(false);
     }
 }
 
