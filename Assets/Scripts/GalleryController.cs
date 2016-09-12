@@ -3,10 +3,9 @@ using UnityEngine;
 using System.Collections;
 using VRStandardAssets.Utils;
 
-public class GalleryController : MonoBehaviour 
+public class GalleryController : MonoBehaviour
 {
-	public int index;
-
+    /*
 	public Renderer renderer;
 
 	//path: resources/textures/360_pics/0...
@@ -32,7 +31,47 @@ public class GalleryController : MonoBehaviour
 			index--;
 		Replace(folder,index);
 	}
+    */
 
+    public int index;
+    int indexMax;
+    GameObject[] cubes;
+
+    void Start()
+    {
+        string path = "LeftCubeMaps"; // Resources/path
+        cubes = Resources.LoadAll<GameObject>(path);
+        indexMax = cubes.Length-1;
+        Instantiate(cubes[0]);
+    }
+
+    public void ChangeCubeMap(bool forward)
+    {
+        Destroy(GameObject.Find(cubes[index].name+"(Clone)"));
+        if (forward)
+            index++;
+        else
+            index--;
+        IsIndexOutOfBounds();
+        Instantiate(cubes[index]);
+
+    }
+
+    void IsIndexOutOfBounds()
+    {
+        if (index < 0)
+            index = indexMax;
+        else if (index > indexMax)
+            index = 0;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.N))
+            ChangeCubeMap(true);
+        if (Input.GetKeyDown(KeyCode.M))
+            ChangeCubeMap(false);
+    }
 }
 
 	/*[SerializeField] private VRInput m_VrInput;                        // Reference to the VRInput to subscribe to swipe events.

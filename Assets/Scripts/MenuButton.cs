@@ -64,10 +64,6 @@ namespace VRStandardAssets.Menu
                 StartCoroutine (ActivateButton());
         }
 
-		//For swapping textures
-		public GameObject cubemap;
-		bool forward;
-
         private IEnumerator ActivateButton()
         {
             // If the camera is already fading, ignore.
@@ -84,15 +80,15 @@ namespace VRStandardAssets.Menu
             // Load the level.
             SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
 
+            /*
 			//For swapping textures
-		/*	GameObject cubemap = GameObject.Find("CubeMap");
-			GalleryController gc = cubemap.GetComponent<GalleryController> ();
-			gc.index++; //or --
-			//OR
-		*/
-			cubemap.GetComponent<GalleryController>().NextTexture(forward);
-
+		    GameObject gallery = GameObject.Find("Gallery");
+			GalleryController gc = gallery.GetComponent<GalleryController> ();
+            if (m_InteractiveItem.name.Equals("forward"))
+                gc.ChangeCubeMap(true);
+            else if (m_InteractiveItem.name.Equals("back"))
+                gc.ChangeCubeMap(false);
+            */
         }
-
     }
 }
