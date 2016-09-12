@@ -11,7 +11,7 @@ public class GalleryController : MonoBehaviour
 
 	//path: resources/textures/360_pics/0...
 	//folder: 360_pics or 360_stereo_pics, imgnum: 0,1,2
-	void Replace(string folder, string imgnum)
+	void Replace(string folder, int imgnum)
 	{
 		renderer = GetComponent<Renderer>();
 		Material[] mats = renderer.materials; //element 0-5
@@ -30,7 +30,7 @@ public class GalleryController : MonoBehaviour
 			index++;
 		else
 			index--;
-		//Replace(folder,index); error
+		Replace(folder,index);
 	}
 
 }
