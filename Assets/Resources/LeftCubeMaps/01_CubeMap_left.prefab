@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011404494224}
   - 33: {fileID: 33000014106738136}
   - 23: {fileID: 23000012318694208}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: 01_CubeMap_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

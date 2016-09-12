@@ -74,6 +74,7 @@ public class GalleryController : MonoBehaviour
         IsIndexOutOfBounds();
         Instantiate(leftCubes[index]);
         Instantiate(rightCubes[index]);
+
     }
 
     void IsIndexOutOfBounds()

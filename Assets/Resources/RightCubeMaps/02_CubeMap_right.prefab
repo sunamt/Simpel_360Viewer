@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000014106738136}
   - 23: {fileID: 23000012318694208}
   m_Layer: 9
-  m_Name: 00_CubeMap_right
+  m_Name: 02_CubeMap_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,12 +54,12 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: e83b3fab871244a44a42144edfd93be7, type: 2}
-  - {fileID: 2100000, guid: a759d51b0613890409351d6c38c0e736, type: 2}
-  - {fileID: 2100000, guid: d790ba77f5160c349b0c6a442e4bf2fd, type: 2}
-  - {fileID: 2100000, guid: c42bf816fa3c0ff46953ce239e96f6e3, type: 2}
-  - {fileID: 2100000, guid: 5d5d9880457e59c46b18710605b4b4c6, type: 2}
-  - {fileID: 2100000, guid: 7432010059105fc429d29260060d18bd, type: 2}
+  - {fileID: 2100000, guid: de88eb522ff507e4b81972cba99143bb, type: 2}
+  - {fileID: 2100000, guid: f2a026e7c8e23a5449118145ea41de67, type: 2}
+  - {fileID: 2100000, guid: d3ea04a312d07874dac78ce4df0c4cda, type: 2}
+  - {fileID: 2100000, guid: 457e83e4f1734974b9523a7f47771aad, type: 2}
+  - {fileID: 2100000, guid: a796e5a9f104674489875e40eae810c1, type: 2}
+  - {fileID: 2100000, guid: 7d219f8bb19fe97459dbd36c3135f614, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}

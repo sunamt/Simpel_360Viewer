@@ -89,6 +89,11 @@ namespace VRStandardAssets.Utils
             FadeIn(m_FadeDuration, fadeAudio);
         }
 
+		//X2
+		public void FadeInBlack(bool fadeAudio)
+		{
+			FadeInBlack(m_FadeDuration, fadeAudio);
+		}
 
         public void FadeIn(float duration, bool fadeAudio)
         {
@@ -102,6 +107,17 @@ namespace VRStandardAssets.Utils
                 m_DefaultSnapshot.TransitionTo (duration);
         }
 
+		public void FadeInBlack(float duration, bool fadeAudio)
+		{
+			// If not already fading start a coroutine to fade from the fade colour to the fade out colour.
+			if (m_IsFading)
+				return;
+			StartCoroutine(BeginFade(m_FadeColor,m_FadeOutColor, duration));
+
+			// Fade in the audio over the same duration.
+			if(m_DefaultSnapshot && fadeAudio)
+				m_DefaultSnapshot.TransitionTo (duration);
+		}
 
         public IEnumerator BeginFadeOut (bool fadeAudio)
         {

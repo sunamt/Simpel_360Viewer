@@ -78,17 +78,17 @@ namespace VRStandardAssets.Menu
             yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 
             // Load the level.
-            SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+            //SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
 
-            /*
+            
 			//For swapping textures
 		    GameObject gallery = GameObject.Find("Gallery");
 			GalleryController gc = gallery.GetComponent<GalleryController> ();
-            if (m_InteractiveItem.name.Equals("forward"))
+            if (m_InteractiveItem.name.Equals("Forward"))
                 gc.ChangeCubeMap(true);
-            else if (m_InteractiveItem.name.Equals("back"))
+            else if (m_InteractiveItem.name.Equals("Back"))
                 gc.ChangeCubeMap(false);
-            */
+			m_CameraFade.FadeInBlack(true);
         }
     }
 }
