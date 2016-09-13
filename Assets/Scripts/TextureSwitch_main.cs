@@ -11,12 +11,14 @@ namespace VRStandardAssets.MainMenu
 
 		[SerializeField] private MeshRenderer m_ScreenMesh;             // The mesh renderer who's texture will be changed.
 		[SerializeField] private VRInteractiveItem m_VRInteractiveItem; // The VRInteractiveItem that needs to be looked at for the textures to play.
-		[SerializeField] private Texture[] m_AnimTextures;              // The textures that will be looped through.
+		[SerializeField] private Texture[] m_SwitchTextures;              // The textures that will be looped through.
 
 		private int m_CurrentTextureIndex;                              // The index of the textures array.
 		private bool m_Playing;                                         // Whether the textures are currently being looped through.
 
-
+		void Start () {
+			m_ScreenMesh.material.mainTexture = m_SwitchTextures[m_CurrentTextureIndex];
+		}
 		private void OnEnable ()
 		{
 			m_VRInteractiveItem.OnOver += HandleOver;
@@ -37,7 +39,7 @@ namespace VRStandardAssets.MainMenu
 			m_Playing = true;
 			//  StartCoroutine (PlayTextures ());
 			m_CurrentTextureIndex = 1;
-			m_ScreenMesh.material.mainTexture = m_AnimTextures[m_CurrentTextureIndex];
+			m_ScreenMesh.material.mainTexture = m_SwitchTextures[m_CurrentTextureIndex];
 		}
 
 
@@ -46,7 +48,7 @@ namespace VRStandardAssets.MainMenu
 			// When the user looks away from the VRInteractiveItem the textures load vr index1.
 			m_Playing = false;
 			m_CurrentTextureIndex = 0;
-			m_ScreenMesh.material.mainTexture = m_AnimTextures[m_CurrentTextureIndex];
+			m_ScreenMesh.material.mainTexture = m_SwitchTextures[m_CurrentTextureIndex];
 		}
 
 	}

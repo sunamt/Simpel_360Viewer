@@ -6,7 +6,7 @@ namespace VRStandardAssets.MainMenu
 {
     // This script changes tint color
     // whilst the user is looking at it.
-	public class TextureSwitch : MonoBehaviour
+	public class ButtonHover : MonoBehaviour
     {
 
         [SerializeField] private MeshRenderer m_ScreenMesh;             // The mesh renderer who's texture will be changed.

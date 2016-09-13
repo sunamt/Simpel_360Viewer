@@ -400,9 +400,14 @@ Prefab:
       propertyPath: m_MotionVectors
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2388946, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6cc731ef798eb4f419332dad5b01b0ae, type: 2}
     m_RemovedComponents:
     - {fileID: 11415948, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
     - {fileID: 11425688, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
+    - {fileID: 6472498, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1182027538
@@ -535,7 +540,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7cf6de74e32cb644a4496d39758ab7b, type: 2}
+  - {fileID: 2100000, guid: 6cc731ef798eb4f419332dad5b01b0ae, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -905,7 +910,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7cf6de74e32cb644a4496d39758ab7b, type: 2}
+  - {fileID: 2100000, guid: 6cc731ef798eb4f419332dad5b01b0ae, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
