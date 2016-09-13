@@ -1289,11 +1289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneToLoad: 3D_model2
+  m_SceneToLoad: Gallery_CubeMap_LeftOnly
   m_CameraFade: {fileID: 1940305994}
   m_SelectionRadial: {fileID: 1940305996}
   m_InteractiveItem: {fileID: 1826588316}
-  cubemap: {fileID: 0}
 --- !u!114 &1826588312
 MonoBehaviour:
   m_ObjectHideFlags: 0

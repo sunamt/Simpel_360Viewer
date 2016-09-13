@@ -37,18 +37,32 @@ public class GalleryController : MonoBehaviour
     int indexMax;
     GameObject[] leftCubes;
     GameObject[] rightCubes;
+    ViewController view;
 
     void Start()
     {
+        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        InitializeCubeMaps(view.isStereo);
+    }
+
+    void InitializeCubeMaps(bool stereo)
+    {
+
         string leftPath = "LeftCubeMaps"; // Resources/path
         string rightPath = "RightCubeMaps";
-
-        leftCubes = Resources.LoadAll<GameObject>(leftPath);
-        rightCubes = Resources.LoadAll<GameObject>(rightPath);
-
+        if (stereo)
+        {
+            leftCubes = Resources.LoadAll<GameObject>(leftPath);
+            rightCubes = Resources.LoadAll<GameObject>(rightPath);
+            Instantiate(leftCubes[view.startImg]);
+            Instantiate(rightCubes[view.startImg]);
+        }
+        else
+        {
+            leftCubes = Resources.LoadAll<GameObject>(leftPath);
+            Instantiate(leftCubes[view.startImg]);
+        }
         indexMax = leftCubes.Length - 1;
-        Instantiate(leftCubes[0]);
-        Instantiate(rightCubes[0]);
     }
 
     public void ChangeCubeMap(bool forward)

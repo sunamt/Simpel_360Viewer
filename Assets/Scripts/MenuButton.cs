@@ -80,15 +80,47 @@ namespace VRStandardAssets.Menu
             // Load the level.
             //SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
 
-            
-			//For swapping textures
-		    GameObject gallery = GameObject.Find("Gallery");
-			GalleryController gc = gallery.GetComponent<GalleryController> ();
-            if (m_InteractiveItem.name.Equals("Forward"))
-                gc.ChangeCubeMap(true);
-            else if (m_InteractiveItem.name.Equals("Back"))
-                gc.ChangeCubeMap(false);
-			m_CameraFade.FadeInBlack(true);
+
+            //For varied button interaction
+            GalleryController gc;
+            ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
+
+            string itemName = m_InteractiveItem.name;
+            switch (itemName)
+            {
+                case "Forward":
+                    gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
+                    if (view.isStereo)
+                        gc.ChangeCubeMapStereo(true);
+                    else
+                        gc.ChangeCubeMap(true);
+                    break;
+                case "Back":
+                    gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
+                    if (view.isStereo)
+                        gc.ChangeCubeMapStereo(false);
+                    else
+                        gc.ChangeCubeMap(false);
+                    break;
+                case "Leave":
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
+                    break;
+                case "Render360":
+                    view.isStereo = true;
+                    view.startImg = 0;
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
+                    
+                    break;
+                case "LiveModel":
+                    view.isStereo = false;
+                    view.startImg = 0;
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
+                    break;
+            }
+
+            m_CameraFade.FadeInBlack(true);
+
         }
+
     }
 }
