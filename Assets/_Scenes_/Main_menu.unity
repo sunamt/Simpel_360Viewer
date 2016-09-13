@@ -480,11 +480,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.9734994
+      value: 0.9935719
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_LocalRotation.z
@@ -492,7 +492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.22868954
+      value: -0.11320323
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_RootOrder
@@ -556,7 +556,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430204, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 206.318
+      value: 193
       objectReference: {fileID: 0}
     - target: {fileID: 11483724, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
       propertyPath: m_SceneToLoad
@@ -578,7 +578,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 159146, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
+      propertyPath: m_Name
+      value: StereoscopicMenu
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11472130, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &778082978
@@ -1185,6 +1190,31 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!1 &1702259324 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 159146, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
+  m_PrefabInternal: {fileID: 775473638}
+--- !u!114 &1702259325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702259324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd33e5e4939ea94faa41788a2cbfbe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 1702259329}
+  m_VRInteractiveItem: {fileID: 617909898}
+  m_AnimTextures:
+  - {fileID: 2800000, guid: f16970c741fd3c84c8df938134c1778f, type: 3}
+  - {fileID: 2800000, guid: 6bd3d23d3d68e1341b55ac90e5fae0e8, type: 3}
+--- !u!23 &1702259329 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2388946, guid: 0d288af118a155347a345cd02226f1d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 775473638}
 --- !u!1 &1808707146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,11 +1260,11 @@ GameObject:
   - 23: {fileID: 1826588317}
   - 114: {fileID: 1826588316}
   - 114: {fileID: 1826588314}
-  - 114: {fileID: 1826588312}
   - 114: {fileID: 1826588310}
   - 114: {fileID: 1826588311}
+  - 114: {fileID: 1826588312}
   m_Layer: 0
-  m_Name: LiveModel
+  m_Name: Regular360Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1246,10 +1276,10 @@ Transform:
   m_PrefabParentObject: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1826588308}
-  m_LocalRotation: {x: -0, y: 0.9799731, z: -0, w: 0.19913019}
+  m_LocalRotation: {x: 0, y: 0.9890159, z: 0, w: 0.1478095}
   m_LocalPosition: {x: -3, y: 1, z: 8}
   m_LocalScale: {x: 60, y: 60, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 157.25401, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 163, z: 0}
   m_Children: []
   m_Father: {fileID: 1371930614}
   m_RootOrder: 1
@@ -1301,11 +1331,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826588308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dd33e5e4939ea94faa41788a2cbfbe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_ScreenMesh: {fileID: 1826588317}
   m_VRInteractiveItem: {fileID: 1826588316}
+  m_AnimTextures:
+  - {fileID: 2800000, guid: 59ebd43390a603e498108c41c52c44b5, type: 3}
+  - {fileID: 2800000, guid: 82cc48c3679de154ab6359cee24397af, type: 3}
 --- !u!82 &1826588313
 AudioSource:
   m_ObjectHideFlags: 0

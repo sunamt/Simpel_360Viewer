@@ -105,13 +105,13 @@ namespace VRStandardAssets.Menu
                 case "Leave":
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
                     break;
-                case "Render360":
+			case "StereoscopicMenu":
                     view.isStereo = true;
                     view.startImg = 0;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
                     
                     break;
-                case "LiveModel":
+			case "Regular360Menu":
                     view.isStereo = false;
                     view.startImg = 0;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene

@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MenuSceneName: Main_menu
-  Timer: 5
+  Timer: 1
 --- !u!1 &1395038131
 GameObject:
   m_ObjectHideFlags: 0
