@@ -27,7 +27,6 @@ GameObject:
   - 64: {fileID: 64000010752570452}
   - 114: {fileID: 114000013726783408}
   - 82: {fileID: 82000011178162464}
-  - 114: {fileID: 114000013614332814}
   - 114: {fileID: 114000011497883356}
   - 114: {fileID: 114000011921376256}
   m_Layer: 0
@@ -235,24 +234,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010655822148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013614332814
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010655822148}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 114000012289781872}
 --- !u!114 &114000013726783408
 MonoBehaviour:
   m_ObjectHideFlags: 1
