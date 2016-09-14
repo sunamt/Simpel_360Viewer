@@ -103,18 +103,15 @@ namespace VRStandardAssets.Menu
                         gc.ChangeCubeMap(false);
                     break;
                 case "Leave":
-                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
 			case "StereoscopicMenu":
                     view.isStereo = true;
-                    view.startImg = 0;
-                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
-                    
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
 			case "Regular360Menu":
                     view.isStereo = false;
-                    view.startImg = 0;
-                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single); //leave scene
+                    SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
             }
 

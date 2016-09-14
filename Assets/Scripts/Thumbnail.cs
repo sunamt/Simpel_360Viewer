@@ -3,8 +3,11 @@ using System.Collections;
 
 public class Thumbnail : MonoBehaviour {
 
-	public void SetThumbnail(Texture t)
+    public int number;
+
+	public void SetThumbnail(Texture t, int i)
     {
         gameObject.GetComponent<Renderer>().material.mainTexture = t;
+        number = i;
     }
 }

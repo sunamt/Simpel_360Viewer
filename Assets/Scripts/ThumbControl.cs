@@ -1,69 +1,58 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using VRStandardAssets.Utils;
 
 public class ThumbControl : MonoBehaviour {
 
-    public GameObject thumbnail;
+    GameObject thumbnail;
     public Texture[] thumbs;
+    public Texture[] thumbsStereo;
     private List<Thumb> thumbList = new List<Thumb>();
+    private List<Thumb> thumbListStereo = new List<Thumb>();
+    ViewController view;
+
 
     class Thumb {
         public Texture texture;
+        public int num;
 
-        public Thumb(Texture t)
+        public Thumb(Texture t, int i)
         {
             texture = t;
+            num = i;
         }
     }
 
     void Start()
     {
-     /* ViewController view = GetComponent<ViewController>().GetComponent<ViewController>();
-        if(view.isStereo)
-            thumbs = Resources.LoadAll<Texture>("thumbs_stereo");
-        else*/
+        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+
+       
             thumbs = Resources.LoadAll<Texture>("thumbs_regular");
 
-        for (int i = 0; i < thumbs.Length; i++)
-        {
-            thumbList.Add(new Thumb(thumbs[i]));
-        }
-        if (thumbs.Length > 0)
-            SpawnThumbs();
+            for (int i = 0; i < thumbs.Length; i++)
+            {
+                thumbList.Add(new Thumb(thumbs[i], i));
+            }
+            if (thumbs.Length > 0)
+                SpawnThumbs();
+        
     }
+
+   
 
     void SpawnThumbs()
     {
-        int rowLength = 3;
-        int colLength = thumbList.Count / rowLength;
-        if (thumbList.Count % rowLength > 0)
-            colLength++;
-        float space = .7f;
-
-        thumbnail = Resources.Load<GameObject>("thumbplane");
-
-        for(int i = 0; i < thumbList.Count; i++)
+        //Note the name in the find method!
+        Thumbnail[] children = GameObject.Find("ThumbnailList (ANOTHER LAYOUT IDEA)").GetComponentsInChildren<Thumbnail>();
+        for (int i = 0; i < children.Length; i++)
         {
-            GameObject t = Instantiate(thumbnail, 
-                new Vector3(
-                    (i % rowLength + (i % rowLength * space)) - (rowLength / 2f) + space,
-                    (i / rowLength + (i / rowLength * space)) - (colLength / 2f) + space, 4),
-                    thumbnail.transform.rotation) as GameObject;
-            t.GetComponentInChildren<Thumbnail>().SetThumbnail(thumbList[i].texture);
+            children[i].SetThumbnail(thumbList[i].texture, thumbList[i].num);
         }
-    }
 
-    void Update()
-    {
-        /*
-        if(Input.GetMouseButtonDown(0) ){
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit, 100))
-				if(hit.transform.GetComponent<MemoryCard>() != null){
-					hit.transform.GetComponent<MemoryCard>().Show();
-				}
-        */
+        
+
     }
+   
 }

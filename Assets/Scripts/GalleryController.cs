@@ -42,10 +42,11 @@ public class GalleryController : MonoBehaviour
     void Start()
     {
         view = GameObject.Find("ViewController").GetComponent<ViewController>();
-        InitializeCubeMaps(view.isStereo);
+        index = view.startImg;
+        InitializeCubeMaps(view.isStereo, index);
     }
 
-    void InitializeCubeMaps(bool stereo)
+    void InitializeCubeMaps(bool stereo, int start)
     {
 
         string leftPath = "LeftCubeMaps"; // Resources/path
@@ -54,13 +55,13 @@ public class GalleryController : MonoBehaviour
         {
             leftCubes = Resources.LoadAll<GameObject>(leftPath);
             rightCubes = Resources.LoadAll<GameObject>(rightPath);
-            Instantiate(leftCubes[view.startImg]);
-            Instantiate(rightCubes[view.startImg]);
+            Instantiate(leftCubes[start]);
+            Instantiate(rightCubes[start]);
         }
         else
         {
             leftCubes = Resources.LoadAll<GameObject>(leftPath);
-            Instantiate(leftCubes[view.startImg]);
+            Instantiate(leftCubes[start]);
         }
         indexMax = leftCubes.Length - 1;
     }
