@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -49,7 +49,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
@@ -64,7 +64,7 @@ LightmapSettings:
     m_CompAOExponentDirect: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
-    m_LightmapsBakeMode: 1
+    m_LightmapsBakeMode: 0
     m_TextureCompression: 1
     m_DirectLightInLightProbes: 1
     m_FinalGather: 0
@@ -261,7 +261,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 288
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_DefaultSnapshot: {fileID: 24500003, guid: faa5d63fc44b7934da13fa4307dcad1e, type: 2}
   m_FadedSnapshot: {fileID: 24597004, guid: faa5d63fc44b7934da13fa4307dcad1e, type: 2}
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
-  FadeInColor: {r: 1, g: 1, b: 1, a: 1}
+  FadeInColor: {r: 0, g: 0, b: 0, a: 1}
   m_FadeDuration: 2
   m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1
@@ -347,7 +347,7 @@ GameObject:
   - 33: {fileID: 195621093}
   - 64: {fileID: 195621092}
   - 23: {fileID: 195621091}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Transform: {fileID: 367670547}
   m_Item: {fileID: 354190402}
   m_PopSpeed: 8
-  m_PopDistance: -0.2
+  m_PopDistance: -0.5
 --- !u!114 &354190397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,7 +1143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416581125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.3, z: 2.47}
+  m_LocalPosition: {x: -0.8, y: 0.01, z: 2.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1687,7 +1687,7 @@ MonoBehaviour:
   m_Transform: {fileID: 1131492586}
   m_Item: {fileID: 821339131}
   m_PopSpeed: 8
-  m_PopDistance: -0.2
+  m_PopDistance: -0.5
 --- !u!114 &821339126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_Transform: {fileID: 1883745117}
   m_Item: {fileID: 911220073}
   m_PopSpeed: 8
-  m_PopDistance: -0.2
+  m_PopDistance: -0.5
 --- !u!114 &911220068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,7 +3628,7 @@ MonoBehaviour:
   m_Transform: {fileID: 521696213}
   m_Item: {fileID: 1429188985}
   m_PopSpeed: 8
-  m_PopDistance: -0.2
+  m_PopDistance: -0.5
 --- !u!114 &1429188980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4069,7 +4069,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1774399231}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4146,7 +4146,7 @@ GameObject:
   - 33: {fileID: 1832180490}
   - 64: {fileID: 1832180489}
   - 23: {fileID: 1832180488}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4819,7 @@ MonoBehaviour:
   m_Transform: {fileID: 1434770083}
   m_Item: {fileID: 2137957231}
   m_PopSpeed: 8
-  m_PopDistance: -0.2
+  m_PopDistance: -0.5
 --- !u!114 &2137957226
 MonoBehaviour:
   m_ObjectHideFlags: 0
