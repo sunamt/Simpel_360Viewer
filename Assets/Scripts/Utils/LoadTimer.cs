@@ -14,7 +14,6 @@ public class LoadTimer : MonoBehaviour {
 
 		IEnumerator Start () {
 		yield return new WaitForSeconds (Timer);
-		//Application.LoadLevel(SceneToLoad);
 
 		m_CameraFade.FadeOut(true);
 		yield return new WaitForSeconds (FadeTimer);

@@ -77,10 +77,6 @@ namespace VRStandardAssets.Menu
             // Wait for the camera to fade out.
             yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 
-            // Load the level.
-            //SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
-
-
             //For varied button interaction
             GalleryController gc;
             ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();

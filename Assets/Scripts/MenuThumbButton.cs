@@ -51,6 +51,7 @@ public class MenuThumbButton : MonoBehaviour
             StartCoroutine(ActivateButton());
     }
 
+
     private IEnumerator ActivateButton()
     {
         // If the camera is already fading, ignore.
@@ -63,26 +64,13 @@ public class MenuThumbButton : MonoBehaviour
 
         // Wait for the camera to fade out.
         yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
-
-        // do stuff...
-
-        ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
-
-        view.startImg = gameObject.GetComponent<Thumbnail>().number;
-
-        Debug.Log("Stereo: " + view.isStereo + ", img: " + view.startImg);
-
         
-
+        ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        view.startImg = gameObject.GetComponent<Thumbnail>().number;
         if (view.isStereo)
-        {
             SceneManager.LoadScene("Gallery_CubeMap", LoadSceneMode.Single);
-        }
         else
-        { 
             SceneManager.LoadScene("Gallery_CubeMap_LeftOnly", LoadSceneMode.Single);
-        }
-
         m_CameraFade.FadeInBlack(true);
     }
 }

@@ -10,9 +10,7 @@ public class ThumbControl : MonoBehaviour {
     public Texture[] thumbsStereo;
     private List<Thumb> thumbList = new List<Thumb>();
     private List<Thumb> thumbListStereo = new List<Thumb>();
-    ViewController view;
-
-
+    
     class Thumb {
         public Texture texture;
         public int num;
@@ -26,21 +24,16 @@ public class ThumbControl : MonoBehaviour {
 
     void Start()
     {
-        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        thumbs = Resources.LoadAll<Texture>("thumbs_regular");
 
-       
-            thumbs = Resources.LoadAll<Texture>("thumbs_regular");
-
-            for (int i = 0; i < thumbs.Length; i++)
-            {
-                thumbList.Add(new Thumb(thumbs[i], i));
-            }
-            if (thumbs.Length > 0)
-                SpawnThumbs();
-        
+        for (int i = 0; i < thumbs.Length; i++)
+        {
+            thumbList.Add(new Thumb(thumbs[i], i));
+        }
+        if (thumbs.Length > 0)
+            SpawnThumbs(); 
     }
-
-   
 
     void SpawnThumbs()
     {
@@ -50,9 +43,5 @@ public class ThumbControl : MonoBehaviour {
         {
             children[i].SetThumbnail(thumbList[i].texture, thumbList[i].num);
         }
-
-        
-
-    }
-   
+    }   
 }

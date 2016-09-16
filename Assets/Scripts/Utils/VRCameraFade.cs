@@ -20,7 +20,7 @@ namespace VRStandardAssets.Utils
         [SerializeField] private Color m_FadeColor = Color.black;       // The colour the image fades out to.
 		[SerializeField] private Color FadeInColor = Color.white;
         [SerializeField] private float m_FadeDuration = 2.0f;           // How long it takes to fade in seconds.
-        [SerializeField] private bool m_FadeInOnSceneLoad = false;      // Whether a fade in should happen as soon as the scene is loaded.
+    //    [SerializeField] private bool m_FadeInOnSceneLoad = false;      // Whether a fade in should happen as soon as the scene is loaded.
         [SerializeField] private bool m_FadeInOnStart = false;          // Whether a fade in should happen just but Updates start.
 
         
@@ -51,7 +51,9 @@ namespace VRStandardAssets.Utils
             }
         }
 
-
+/*
+ *      This might have been the one making the fade blink (as the fading color was reset?)
+ * 
         private void OnLevelWasLoaded()
         {
             // If applicable set the immediate colour to be faded out and then fade in.
@@ -61,7 +63,7 @@ namespace VRStandardAssets.Utils
                 FadeIn(true);
             }
         }
-
+*/
         
         // Since no duration is specified with this overload use the default duration.
         public void FadeOut(bool fadeAudio)

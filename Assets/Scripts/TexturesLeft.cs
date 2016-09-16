@@ -5,14 +5,7 @@ using System.Collections;
 
 	public Texture[] TextureLeft = new Texture[1];
 	public int CurrentTextureLeft;
-		
-	void Start () 
-	{
-
-	}
-
-
-		
+	
 }
 
 

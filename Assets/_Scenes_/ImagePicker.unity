@@ -157,7 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 142647439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a023bf4efda4145860192b9d3df5c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 79e05dab7c2bdb44fa60d158053fc9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &142647441
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 142647439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e2d324890d55cb4cbf460e0388c7170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3
@@ -334,7 +334,6 @@ MonoBehaviour:
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
   FadeInColor: {r: 0, g: 0, b: 0, a: 1}
   m_FadeDuration: 2
-  m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1
 --- !u!1 &195621089
 GameObject:
@@ -549,7 +548,6 @@ GameObject:
   - 64: {fileID: 279181543}
   - 114: {fileID: 279181542}
   - 82: {fileID: 279181541}
-  - 114: {fileID: 279181540}
   - 114: {fileID: 279181539}
   - 114: {fileID: 279181538}
   m_Layer: 8
@@ -590,22 +588,6 @@ MonoBehaviour:
   m_Item: {fileID: 279181545}
   m_PopSpeed: 8
   m_PopDistance: -0.2
---- !u!114 &279181540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 279181537}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 279181545}
 --- !u!82 &279181541
 AudioSource:
   m_ObjectHideFlags: 0
@@ -744,7 +726,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 279181537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &279181546
@@ -844,7 +826,6 @@ GameObject:
   - 64: {fileID: 354190400}
   - 114: {fileID: 354190399}
   - 82: {fileID: 354190398}
-  - 114: {fileID: 354190397}
   - 114: {fileID: 354190396}
   - 114: {fileID: 354190395}
   m_Layer: 8
@@ -885,22 +866,6 @@ MonoBehaviour:
   m_Item: {fileID: 354190402}
   m_PopSpeed: 8
   m_PopDistance: -0.5
---- !u!114 &354190397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354190394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 354190402}
 --- !u!82 &354190398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1039,7 +1004,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 354190394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &354190403
@@ -1171,7 +1136,6 @@ GameObject:
   - 64: {fileID: 442242063}
   - 114: {fileID: 442242062}
   - 82: {fileID: 442242061}
-  - 114: {fileID: 442242060}
   - 114: {fileID: 442242059}
   - 114: {fileID: 442242058}
   m_Layer: 8
@@ -1212,22 +1176,6 @@ MonoBehaviour:
   m_Item: {fileID: 442242065}
   m_PopSpeed: 8
   m_PopDistance: -0.2
---- !u!114 &442242060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 442242057}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 442242065}
 --- !u!82 &442242061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1366,7 +1314,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 442242057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &442242066
@@ -1647,7 +1595,6 @@ GameObject:
   - 64: {fileID: 821339129}
   - 114: {fileID: 821339128}
   - 82: {fileID: 821339127}
-  - 114: {fileID: 821339126}
   - 114: {fileID: 821339125}
   - 114: {fileID: 821339124}
   m_Layer: 8
@@ -1688,22 +1635,6 @@ MonoBehaviour:
   m_Item: {fileID: 821339131}
   m_PopSpeed: 8
   m_PopDistance: -0.5
---- !u!114 &821339126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 821339123}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 821339131}
 --- !u!82 &821339127
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1842,7 +1773,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 821339123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &821339132
@@ -2222,7 +2153,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11464688, guid: 0d288af118a155347a345cd02226f1d6,
     type: 2}
   m_PrefabInternal: {fileID: 886307638}
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
 --- !u!1 &886307640 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 159146, guid: 0d288af118a155347a345cd02226f1d6, type: 2}
@@ -2269,7 +2200,6 @@ GameObject:
   - 64: {fileID: 911220071}
   - 114: {fileID: 911220070}
   - 82: {fileID: 911220069}
-  - 114: {fileID: 911220068}
   - 114: {fileID: 911220067}
   - 114: {fileID: 911220066}
   m_Layer: 8
@@ -2310,22 +2240,6 @@ MonoBehaviour:
   m_Item: {fileID: 911220073}
   m_PopSpeed: 8
   m_PopDistance: -0.5
---- !u!114 &911220068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 911220065}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 911220073}
 --- !u!82 &911220069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2464,7 +2378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 911220065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &911220074
@@ -2610,7 +2524,6 @@ GameObject:
   - 64: {fileID: 942629554}
   - 114: {fileID: 942629553}
   - 82: {fileID: 942629552}
-  - 114: {fileID: 942629551}
   - 114: {fileID: 942629550}
   - 114: {fileID: 942629549}
   m_Layer: 8
@@ -2651,22 +2564,6 @@ MonoBehaviour:
   m_Item: {fileID: 942629556}
   m_PopSpeed: 8
   m_PopDistance: -0.2
---- !u!114 &942629551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 942629548}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 942629556}
 --- !u!82 &942629552
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2805,7 +2702,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 942629548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &942629557
@@ -3056,7 +2953,6 @@ GameObject:
   - 64: {fileID: 1239618308}
   - 114: {fileID: 1239618307}
   - 82: {fileID: 1239618306}
-  - 114: {fileID: 1239618305}
   - 114: {fileID: 1239618304}
   - 114: {fileID: 1239618303}
   m_Layer: 8
@@ -3097,22 +2993,6 @@ MonoBehaviour:
   m_Item: {fileID: 1239618310}
   m_PopSpeed: 8
   m_PopDistance: -0.2
---- !u!114 &1239618305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1239618302}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 1239618310}
 --- !u!82 &1239618306
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3251,7 +3131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1239618302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1239618311
@@ -3322,7 +3202,6 @@ GameObject:
   - 64: {fileID: 1274646884}
   - 114: {fileID: 1274646883}
   - 82: {fileID: 1274646882}
-  - 114: {fileID: 1274646881}
   - 114: {fileID: 1274646880}
   - 114: {fileID: 1274646879}
   m_Layer: 8
@@ -3363,22 +3242,6 @@ MonoBehaviour:
   m_Item: {fileID: 1274646886}
   m_PopSpeed: 8
   m_PopDistance: -0.2
---- !u!114 &1274646881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1274646878}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 1274646886}
 --- !u!82 &1274646882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3517,7 +3380,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1274646878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1274646887
@@ -3588,7 +3451,6 @@ GameObject:
   - 64: {fileID: 1429188983}
   - 114: {fileID: 1429188982}
   - 82: {fileID: 1429188981}
-  - 114: {fileID: 1429188980}
   - 114: {fileID: 1429188979}
   - 114: {fileID: 1429188978}
   m_Layer: 8
@@ -3629,22 +3491,6 @@ MonoBehaviour:
   m_Item: {fileID: 1429188985}
   m_PopSpeed: 8
   m_PopDistance: -0.5
---- !u!114 &1429188980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1429188977}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 1429188985}
 --- !u!82 &1429188981
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3783,7 +3629,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1429188977}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1429188986
@@ -4407,7 +4253,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1970438985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1970438987
@@ -4779,7 +4625,6 @@ GameObject:
   - 64: {fileID: 2137957229}
   - 114: {fileID: 2137957228}
   - 82: {fileID: 2137957227}
-  - 114: {fileID: 2137957226}
   - 114: {fileID: 2137957225}
   - 114: {fileID: 2137957224}
   m_Layer: 8
@@ -4820,22 +4665,6 @@ MonoBehaviour:
   m_Item: {fileID: 2137957231}
   m_PopSpeed: 8
   m_PopDistance: -0.5
---- !u!114 &2137957226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013614332814, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2137957223}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneToLoad: 
-  m_CameraFade: {fileID: 0}
-  m_SelectionRadial: {fileID: 0}
-  m_InteractiveItem: {fileID: 2137957231}
 --- !u!82 &2137957227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4974,7 +4803,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137957223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2137957232

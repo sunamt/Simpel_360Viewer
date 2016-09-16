@@ -37,7 +37,6 @@ namespace VRStandardAssets.MainMenu
 		{
 			// When the user looks at the VRInteractiveItem the textures load vr index1.
 			m_Playing = true;
-			//  StartCoroutine (PlayTextures ());
 			m_CurrentTextureIndex = 1;
 			m_ScreenMesh.material.mainTexture = m_SwitchTextures[m_CurrentTextureIndex];
 		}
