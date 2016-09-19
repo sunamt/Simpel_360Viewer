@@ -253,7 +253,6 @@ MonoBehaviour:
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
   FadeInColor: {r: 0, g: 0, b: 0, a: 1}
   m_FadeDuration: 2
-  m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1
 --- !u!114 &294443164
 MonoBehaviour:
@@ -696,7 +695,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1362711541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &1362711547
@@ -900,7 +899,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463037707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e05dab7c2bdb44fa60d158053fc9ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a023bf4efda4145860192b9d3df5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1463037709
@@ -942,7 +941,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463037707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2d324890d55cb4cbf460e0388c7170, type: 3}
+  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3
@@ -1025,8 +1024,8 @@ Camera:
   m_TargetEye: 1
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoConvergence: 0
+  m_StereoSeparation: 0
   m_StereoMirrorMode: 0
 --- !u!1 &1536348099
 GameObject:
@@ -1229,7 +1228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826588308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &1826588317
@@ -1346,8 +1345,8 @@ Camera:
   m_TargetEye: 2
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoConvergence: 0
+  m_StereoSeparation: 0
   m_StereoMirrorMode: 0
 --- !u!1 &1936212664
 GameObject:
@@ -1481,7 +1480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039546733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &2039546737

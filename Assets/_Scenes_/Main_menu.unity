@@ -422,7 +422,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1702259324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &617909907
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152745126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e05dab7c2bdb44fa60d158053fc9ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a023bf4efda4145860192b9d3df5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1152745128
@@ -1062,7 +1062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1340412468
 Transform:
   m_ObjectHideFlags: 0
@@ -1605,14 +1605,9 @@ MonoBehaviour:
   m_Audio: {fileID: 1702259332}
   m_OnOverClip: {fileID: 8300000, guid: 2bd66143af0efeb4e884e4273d2ed956, type: 3}
   m_OnFilledClip: {fileID: 8300000, guid: 9f9d2c4dc4b50704bbf83a0e84e35936, type: 3}
-  m_Slider: {fileID: 0}
   m_InteractiveItem: {fileID: 617909898}
   m_VRInput: {fileID: 1940305998}
-  m_BarCanvas: {fileID: 0}
-  m_Renderer: {fileID: 0}
   m_SelectionRadial: {fileID: 1940305996}
-  m_UIFader: {fileID: 0}
-  m_Collider: {fileID: 0}
   m_DisableOnBarFill: 1
   m_DisappearOnBarFill: 0
 --- !u!114 &1702259328
@@ -1840,14 +1835,9 @@ MonoBehaviour:
   m_Audio: {fileID: 1826588313}
   m_OnOverClip: {fileID: 8300000, guid: 2bd66143af0efeb4e884e4273d2ed956, type: 3}
   m_OnFilledClip: {fileID: 8300000, guid: 9f9d2c4dc4b50704bbf83a0e84e35936, type: 3}
-  m_Slider: {fileID: 0}
   m_InteractiveItem: {fileID: 1826588316}
   m_VRInput: {fileID: 1940305998}
-  m_BarCanvas: {fileID: 0}
-  m_Renderer: {fileID: 0}
   m_SelectionRadial: {fileID: 1940305996}
-  m_UIFader: {fileID: 0}
-  m_Collider: {fileID: 0}
   m_DisableOnBarFill: 1
   m_DisappearOnBarFill: 0
 --- !u!114 &1826588311
@@ -1995,7 +1985,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826588308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &1826588317
@@ -2125,7 +2115,6 @@ MonoBehaviour:
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
   FadeInColor: {r: 1, g: 1, b: 1, a: 1}
   m_FadeDuration: 2
-  m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1
 --- !u!114 &1940305996
 MonoBehaviour:
@@ -2152,7 +2141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152745126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2d324890d55cb4cbf460e0388c7170, type: 3}
+  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3

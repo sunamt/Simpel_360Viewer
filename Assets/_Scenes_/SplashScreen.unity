@@ -441,8 +441,8 @@ Camera:
   m_TargetEye: 2
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoConvergence: 0
+  m_StereoSeparation: 0
   m_StereoMirrorMode: 0
 --- !u!4 &1395038136
 Transform:
@@ -560,8 +560,8 @@ Camera:
   m_TargetEye: 1
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoConvergence: 0
+  m_StereoSeparation: 0
   m_StereoMirrorMode: 0
 --- !u!4 &1447679017
 Transform:
@@ -606,7 +606,6 @@ MonoBehaviour:
   m_FadeColor: {r: 1, g: 1, b: 1, a: 1}
   FadeInColor: {r: 1, g: 1, b: 1, a: 1}
   m_FadeDuration: 3
-  m_FadeInOnSceneLoad: 0
   m_FadeInOnStart: 1
 --- !u!1 &1474275633
 GameObject:
