@@ -1024,8 +1024,8 @@ Camera:
   m_TargetEye: 1
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 0
-  m_StereoSeparation: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
 --- !u!1 &1536348099
 GameObject:
@@ -1345,8 +1345,8 @@ Camera:
   m_TargetEye: 2
   m_HDR: 0
   m_OcclusionCulling: 1
-  m_StereoConvergence: 0
-  m_StereoSeparation: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
 --- !u!1 &1936212664
 GameObject:
