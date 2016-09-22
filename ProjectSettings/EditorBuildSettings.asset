@@ -19,23 +19,25 @@ EditorBuildSettings:
     path: Assets/VRSampleScenes/Scenes/Shooter180.unity
   - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Sune_Main.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes_/SplashScreen.unity
   - enabled: 0
     path: Assets/_Scenes_/Intro_navigation.unity
-  - enabled: 1
-    path: Assets/_Scenes_/Main_menu.unity
   - enabled: 0
     path: Assets/_Scenes_/3D_model.unity
   - enabled: 0
+    path: Assets/_Scenes_/Main_menu.unity
+  - enabled: 0
     path: Assets/_Scenes_/3D_model2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes_/Gallery_CubeMap.unity
   - enabled: 0
     path: Assets/_Scenes_/Stereo_360_Sperical.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes_/Gallery_CubeMap_LeftOnly.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes_/ImagePicker.unity
   - enabled: 0
     path: Assets/_Scenes_/ImagePickerStereo.unity
+  - enabled: 1
+    path: Assets/_Scenes_/Gallery360_CubeMap.unity
