@@ -13,7 +13,7 @@ public class GalleryController : MonoBehaviour
 
     void Start()
     {
-        view = GameObject.Find("ViewControllerTemp").GetComponent<ViewController>();
+        view = GameObject.Find("ViewController").GetComponent<ViewController>();
         index = view.startImg;
 
         GameObject bc = GameObject.Find("BothCube");
@@ -23,17 +23,21 @@ public class GalleryController : MonoBehaviour
         if (view.isStereo)
         {
             bc.SetActive(false);
+            lc.GetComponent<CubeController>().Initialize();
+            rc.GetComponent<CubeController>().Initialize();
+
         }
         else
         {
             lc.SetActive(false);
             rc.SetActive(false);
+            bc.GetComponent<CubeController>().Initialize();
         }
 
         // InitializeCubeMaps(view.isStereo, index);
     }
 
-
+/*
     void InitializeCubeMaps(bool stereo, int start)
     {
 
@@ -80,13 +84,13 @@ public class GalleryController : MonoBehaviour
         Instantiate(leftCubes[index]);
         Instantiate(rightCubes[index]);
     }
+*/
 
-
-    void IsIndexOutOfBounds()
+ /*   void IsIndexOutOfBounds()
     {
         if (index < 0)
             index = indexMax;
         else if (index > indexMax)
             index = 0;
-    }
+    }*/
 }

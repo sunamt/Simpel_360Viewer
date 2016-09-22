@@ -67,10 +67,13 @@ public class MenuThumbButton : MonoBehaviour
         
         ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
         view.startImg = gameObject.GetComponent<Thumbnail>().number;
-        if (view.isStereo)
+
+        SceneManager.LoadScene("Gallery360_CubeMap");
+    /*    if (view.isStereo)
             SceneManager.LoadScene("Gallery_CubeMap", LoadSceneMode.Single);
         else
             SceneManager.LoadScene("Gallery_CubeMap_LeftOnly", LoadSceneMode.Single);
+            */
         m_CameraFade.FadeInBlack(true);
     }
 }

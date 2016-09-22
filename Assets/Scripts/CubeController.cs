@@ -7,15 +7,14 @@ public class CubeController : MonoBehaviour
 {
 
     ViewController vc;
-    int index;
+    public int index;
     public int indexMax = 5;
     public string folder;
 
     void Start()
     {
-        vc = GameObject.Find("ViewControllerTemp").GetComponent<ViewController>();
+        vc = GameObject.Find("ViewController").GetComponent<ViewController>();
         index = vc.startImg;
-
         FindIndexMax(folder);
     }
 
@@ -26,6 +25,13 @@ public class CubeController : MonoBehaviour
         else
             index--;
         IsIndexOutOfBounds();
+        TextureSwitcher[] tss = gameObject.GetComponentsInChildren<TextureSwitcher>();
+        foreach (TextureSwitcher ts in tss)
+            ts.Switch(folder, index);
+    }
+
+    public void Initialize()
+    {
         TextureSwitcher[] tss = gameObject.GetComponentsInChildren<TextureSwitcher>();
         foreach (TextureSwitcher ts in tss)
             ts.Switch(folder, index);

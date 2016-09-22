@@ -78,39 +78,48 @@ namespace VRStandardAssets.Menu
             yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 
             //For varied button interaction
-    //        GalleryController gc;
             CubeController cc;
-            ViewController view = GameObject.Find("ViewControllerTemp").GetComponent<ViewController>();
+            ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
 
             string itemName = m_InteractiveItem.name;
             switch (itemName)
             {
                 case "Forward":
-                    cc = GameObject.Find("BothCube").GetComponent<CubeController>();
-                    cc.LoadTextures(true);
-           /*         gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
                     if (view.isStereo)
-                        gc.ChangeCubeMapStereo(true);
+                    {
+                        cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
+                        cc.LoadTextures(true);
+                        cc = GameObject.Find("RightCube").GetComponent<CubeController>();
+                        cc.LoadTextures(true);
+                    }
                     else
-                        gc.ChangeCubeMap(true);*/
+                    {
+                        cc = GameObject.Find("BothCube").GetComponent<CubeController>();
+                        cc.LoadTextures(true);
+                    }
                     break;
                 case "Back":
-                    cc = GameObject.Find("BothCube").GetComponent<CubeController>();
-                    cc.LoadTextures(false);
-        /*          gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
                     if (view.isStereo)
-                        gc.ChangeCubeMapStereo(false);
+                    {
+                        cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
+                        cc.LoadTextures(false);
+                        cc = GameObject.Find("RightCube").GetComponent<CubeController>();
+                        cc.LoadTextures(false);
+                    }
                     else
-                        gc.ChangeCubeMap(false);*/
+                    {
+                        cc = GameObject.Find("BothCube").GetComponent<CubeController>();
+                        cc.LoadTextures(false);
+                    }
                     break;
                 case "Leave":
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
-			case "StereoscopicMenu":
+			    case "StereoscopicMenu":
                     view.isStereo = true;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
-			case "Regular360Menu":
+			    case "Regular360Menu":
                     view.isStereo = false;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
