@@ -13,9 +13,24 @@ public class GalleryController : MonoBehaviour
 
     void Start()
     {
-        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        view = GameObject.Find("ViewControllerTemp").GetComponent<ViewController>();
         index = view.startImg;
-        InitializeCubeMaps(view.isStereo, index);
+
+        GameObject bc = GameObject.Find("BothCube");
+        GameObject lc = GameObject.Find("LeftCube");
+        GameObject rc = GameObject.Find("RightCube");
+
+        if (view.isStereo)
+        {
+            bc.SetActive(false);
+        }
+        else
+        {
+            lc.SetActive(false);
+            rc.SetActive(false);
+        }
+
+        // InitializeCubeMaps(view.isStereo, index);
     }
 
 

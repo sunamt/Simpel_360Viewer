@@ -78,25 +78,30 @@ namespace VRStandardAssets.Menu
             yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 
             //For varied button interaction
-            GalleryController gc;
-            ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
+    //        GalleryController gc;
+            CubeController cc;
+            ViewController view = GameObject.Find("ViewControllerTemp").GetComponent<ViewController>();
 
             string itemName = m_InteractiveItem.name;
             switch (itemName)
             {
                 case "Forward":
-                    gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
+                    cc = GameObject.Find("BothCube").GetComponent<CubeController>();
+                    cc.LoadTextures(true);
+           /*         gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
                     if (view.isStereo)
                         gc.ChangeCubeMapStereo(true);
                     else
-                        gc.ChangeCubeMap(true);
+                        gc.ChangeCubeMap(true);*/
                     break;
                 case "Back":
-                    gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
+                    cc = GameObject.Find("BothCube").GetComponent<CubeController>();
+                    cc.LoadTextures(false);
+        /*          gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
                     if (view.isStereo)
                         gc.ChangeCubeMapStereo(false);
                     else
-                        gc.ChangeCubeMap(false);
+                        gc.ChangeCubeMap(false);*/
                     break;
                 case "Leave":
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);

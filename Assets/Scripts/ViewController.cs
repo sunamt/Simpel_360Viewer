@@ -8,6 +8,9 @@ public class ViewController : MonoBehaviour {
 	
     void Awake()
     {
+        startImg = 0;     // temp
+        isStereo = false; // temp
+
         DontDestroyOnLoad(gameObject);
     }
 }
