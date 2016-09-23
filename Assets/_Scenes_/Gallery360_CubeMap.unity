@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0742577183eb7964686ad45f844edd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneToLoad: Main_menu
+  m_SceneToLoad: ImagePicker
   m_CameraFade: {fileID: 294443162}
   m_SelectionRadial: {fileID: 294443164}
   m_InteractiveItem: {fileID: 1362711546}
