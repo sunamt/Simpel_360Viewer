@@ -14,7 +14,6 @@ public class GalleryController : MonoBehaviour
     void Start()
     {
         view = GameObject.Find("ViewController").GetComponent<ViewController>();
-        index = view.startImg;
 
         GameObject bc = GameObject.Find("BothCube");
         GameObject lc = GameObject.Find("LeftCube");

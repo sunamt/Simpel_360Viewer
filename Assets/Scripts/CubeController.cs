@@ -11,7 +11,7 @@ public class CubeController : MonoBehaviour
     public int indexMax = 5;
     public string folder;
 
-    void Start()
+    void Awake()
     {
         vc = GameObject.Find("ViewController").GetComponent<ViewController>();
         index = vc.startImg;

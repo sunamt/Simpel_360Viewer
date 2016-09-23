@@ -79,6 +79,7 @@ namespace VRStandardAssets.Menu
 
             //For varied button interaction
             CubeController cc;
+            CubeController cc2;
             ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
 
             string itemName = m_InteractiveItem.name;
@@ -88,9 +89,9 @@ namespace VRStandardAssets.Menu
                     if (view.isStereo)
                     {
                         cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
+                        cc2 = GameObject.Find("RightCube").GetComponent<CubeController>();
                         cc.LoadTextures(true);
-                        cc = GameObject.Find("RightCube").GetComponent<CubeController>();
-                        cc.LoadTextures(true);
+                        cc2.LoadTextures(true);
                     }
                     else
                     {
@@ -102,9 +103,9 @@ namespace VRStandardAssets.Menu
                     if (view.isStereo)
                     {
                         cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
+                        cc2 = GameObject.Find("RightCube").GetComponent<CubeController>();
                         cc.LoadTextures(false);
-                        cc = GameObject.Find("RightCube").GetComponent<CubeController>();
-                        cc.LoadTextures(false);
+                        cc2.LoadTextures(false);
                     }
                     else
                     {
