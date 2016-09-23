@@ -9,8 +9,8 @@ public class LoadTimer : MonoBehaviour {
 	[SerializeField] private VRCameraFade m_CameraFade; 
 
 	public string m_MenuSceneName = "insertScene";
-	public float Timer = 15f;
-	public float FadeTimer = 4f;
+	public float Timer = 0f;
+	public float FadeTimer = 0f;
 
 		IEnumerator Start () {
 		yield return new WaitForSeconds (Timer);

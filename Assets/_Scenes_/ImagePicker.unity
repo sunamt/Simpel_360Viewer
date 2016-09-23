@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 142647439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e05dab7c2bdb44fa60d158053fc9ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a023bf4efda4145860192b9d3df5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &142647441
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 142647439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e2d324890d55cb4cbf460e0388c7170, type: 3}
+  m_Script: {fileID: 11500000, guid: 8902ef04f323e444b98d2e4fd80a56ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3
@@ -514,12 +514,12 @@ GameObject:
   - 23: {fileID: 354190404}
   - 114: {fileID: 354190403}
   - 114: {fileID: 354190402}
-  - 114: {fileID: 354190401}
   - 64: {fileID: 354190400}
   - 114: {fileID: 354190399}
   - 82: {fileID: 354190398}
   - 114: {fileID: 354190396}
   - 114: {fileID: 354190395}
+  - 114: {fileID: 354190397}
   m_Layer: 8
   m_Name: 02_thumbplane
   m_TagString: Untagged
@@ -558,6 +558,19 @@ MonoBehaviour:
   m_Item: {fileID: 354190402}
   m_PopSpeed: 8
   m_PopDistance: -0.5
+--- !u!114 &354190397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354190394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6603a19fa28e1084ca163d9d50196af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 354190404}
+  m_VRInteractiveItem: {fileID: 354190402}
 --- !u!82 &354190398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -668,20 +681,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 5c0bf0316ee11df4ab09ae48220d4328, type: 3}
---- !u!114 &354190401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000011388350088, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 354190394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 354190404}
-  m_VRInteractiveItem: {fileID: 354190402}
 --- !u!114 &354190402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +690,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 354190394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &354190403
@@ -1001,12 +1000,12 @@ GameObject:
   - 23: {fileID: 821339133}
   - 114: {fileID: 821339132}
   - 114: {fileID: 821339131}
-  - 114: {fileID: 821339130}
   - 64: {fileID: 821339129}
   - 114: {fileID: 821339128}
   - 82: {fileID: 821339127}
   - 114: {fileID: 821339125}
   - 114: {fileID: 821339124}
+  - 114: {fileID: 821339126}
   m_Layer: 8
   m_Name: 04_thumbplane
   m_TagString: Untagged
@@ -1045,6 +1044,19 @@ MonoBehaviour:
   m_Item: {fileID: 821339131}
   m_PopSpeed: 8
   m_PopDistance: -0.5
+--- !u!114 &821339126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821339123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6603a19fa28e1084ca163d9d50196af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 821339133}
+  m_VRInteractiveItem: {fileID: 821339131}
 --- !u!82 &821339127
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1155,20 +1167,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 5c0bf0316ee11df4ab09ae48220d4328, type: 3}
---- !u!114 &821339130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000011388350088, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 821339123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 821339133}
-  m_VRInteractiveItem: {fileID: 821339131}
 --- !u!114 &821339131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,7 +1176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 821339123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &821339132
@@ -1421,12 +1419,12 @@ GameObject:
   - 23: {fileID: 911220075}
   - 114: {fileID: 911220074}
   - 114: {fileID: 911220073}
-  - 114: {fileID: 911220072}
   - 64: {fileID: 911220071}
   - 114: {fileID: 911220070}
   - 82: {fileID: 911220069}
   - 114: {fileID: 911220067}
   - 114: {fileID: 911220066}
+  - 114: {fileID: 911220068}
   m_Layer: 8
   m_Name: 03_thumbplane
   m_TagString: Untagged
@@ -1465,6 +1463,19 @@ MonoBehaviour:
   m_Item: {fileID: 911220073}
   m_PopSpeed: 8
   m_PopDistance: -0.5
+--- !u!114 &911220068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911220065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6603a19fa28e1084ca163d9d50196af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 911220075}
+  m_VRInteractiveItem: {fileID: 911220073}
 --- !u!82 &911220069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1575,20 +1586,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 5c0bf0316ee11df4ab09ae48220d4328, type: 3}
---- !u!114 &911220072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000011388350088, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 911220065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 911220075}
-  m_VRInteractiveItem: {fileID: 911220073}
 --- !u!114 &911220073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1598,7 +1595,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 911220065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &911220074
@@ -1842,12 +1839,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 1284240544}
   - 82: {fileID: 1284240543}
-  - 33: {fileID: 1284240542}
   - 23: {fileID: 1284240541}
   - 114: {fileID: 1284240540}
   - 114: {fileID: 1284240539}
   - 114: {fileID: 1284240538}
   - 65: {fileID: 1284240537}
+  - 102: {fileID: 1284240542}
   m_Layer: 5
   m_Name: Leave
   m_TagString: Untagged
@@ -1865,8 +1862,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.72308755, y: 1.007541, z: 0.22998218}
-  m_Center: {x: 0.2082224, y: 0.000000029802322, z: 0.11499109}
+  m_Size: {x: 2.28, y: 0.42, z: 0.22998218}
+  m_Center: {x: -0, y: 0, z: 0}
 --- !u!114 &1284240538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1893,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 1284240541}
+  m_TextMesh: {fileID: 1284240542}
   m_VRInteractiveItem: {fileID: 1284240540}
 --- !u!114 &1284240540
 MonoBehaviour:
@@ -1904,7 +1901,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284240536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &1284240541
@@ -1921,7 +1918,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6cc731ef798eb4f419332dad5b01b0ae, type: 2}
+  - {fileID: 2100000, guid: 1ab4740f034baf2488e984a82e190cb3, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -1937,14 +1934,27 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &1284240542
-MeshFilter:
+--- !u!102 &1284240542
+TextMesh:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3333766, guid: 91b3bfdb6dd0b8847af2aed0f548e04a,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284240536}
-  m_Mesh: {fileID: 4300000, guid: bed8b9f89f34c5343a122a25ed494ffe, type: 3}
+  m_Text: Back to menu
+  m_OffsetZ: 0
+  m_CharacterSize: 0.06
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 61
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: 1ab4740f034baf2488e984a82e190cb3, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
 --- !u!82 &1284240543
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2027,10 +2037,10 @@ Transform:
   m_PrefabParentObject: {fileID: 466652, guid: 91b3bfdb6dd0b8847af2aed0f548e04a, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284240536}
-  m_LocalRotation: {x: 0.2170403, y: -0.2170403, z: 0.6729737, w: 0.6729737}
+  m_LocalRotation: {x: 0.30694133, y: 0, z: 0, w: 0.95172846}
   m_LocalPosition: {x: 0, y: -3.45, z: 3.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 35.75, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 35.75, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1812009227}
   m_RootOrder: 0
@@ -2047,12 +2057,12 @@ GameObject:
   - 23: {fileID: 1429188987}
   - 114: {fileID: 1429188986}
   - 114: {fileID: 1429188985}
-  - 114: {fileID: 1429188984}
   - 64: {fileID: 1429188983}
   - 114: {fileID: 1429188982}
   - 82: {fileID: 1429188981}
   - 114: {fileID: 1429188979}
   - 114: {fileID: 1429188978}
+  - 114: {fileID: 1429188980}
   m_Layer: 8
   m_Name: 01_thumbplane
   m_TagString: Untagged
@@ -2091,6 +2101,19 @@ MonoBehaviour:
   m_Item: {fileID: 1429188985}
   m_PopSpeed: 8
   m_PopDistance: -0.5
+--- !u!114 &1429188980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1429188977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6603a19fa28e1084ca163d9d50196af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 1429188987}
+  m_VRInteractiveItem: {fileID: 1429188985}
 --- !u!82 &1429188981
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2201,20 +2224,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 5c0bf0316ee11df4ab09ae48220d4328, type: 3}
---- !u!114 &1429188984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000011388350088, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1429188977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 1429188987}
-  m_VRInteractiveItem: {fileID: 1429188985}
 --- !u!114 &1429188985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,7 +2233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1429188977}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1429188986
@@ -2435,8 +2444,8 @@ MonoBehaviour:
   m_TurnAngle: 36
   m_DesiredDirection: {fileID: 178428253}
   m_Camera: {fileID: 178428253}
-  m_ArrowRenderers:
-  - {fileID: 1284240541}
+  m_TextMeshes:
+  - {fileID: 1284240542}
 --- !u!4 &1812009227
 Transform:
   m_ObjectHideFlags: 0
@@ -2732,12 +2741,12 @@ GameObject:
   - 23: {fileID: 2137957233}
   - 114: {fileID: 2137957232}
   - 114: {fileID: 2137957231}
-  - 114: {fileID: 2137957230}
   - 64: {fileID: 2137957229}
   - 114: {fileID: 2137957228}
   - 82: {fileID: 2137957227}
   - 114: {fileID: 2137957225}
   - 114: {fileID: 2137957224}
+  - 114: {fileID: 2137957226}
   m_Layer: 8
   m_Name: 00_thumbplane
   m_TagString: Untagged
@@ -2776,6 +2785,19 @@ MonoBehaviour:
   m_Item: {fileID: 2137957231}
   m_PopSpeed: 8
   m_PopDistance: -0.5
+--- !u!114 &2137957226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137957223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6603a19fa28e1084ca163d9d50196af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenMesh: {fileID: 2137957233}
+  m_VRInteractiveItem: {fileID: 2137957231}
 --- !u!82 &2137957227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2886,20 +2908,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 5c0bf0316ee11df4ab09ae48220d4328, type: 3}
---- !u!114 &2137957230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000011388350088, guid: a6b745bea119f504bab99e14c36d7aed,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2137957223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726425f6ce4e09447b18898af9b5ca61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScreenMesh: {fileID: 2137957233}
-  m_VRInteractiveItem: {fileID: 2137957231}
 --- !u!114 &2137957231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2909,7 +2917,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137957223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801e74ea4ddffd04da43c82a3dcf3e99, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2137957232

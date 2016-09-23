@@ -170,6 +170,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b4d846c2da55e94bb5202edbd3bb91a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b4d846c2da55e94bb5202edbd3bb91a, type: 3}
   m_IsPrefabParent: 0
@@ -377,7 +381,7 @@ MonoBehaviour:
   m_CameraFade: {fileID: 1447679019}
   m_MenuSceneName: Main_menu
   Timer: 5
-  FadeTimer: 4
+  FadeTimer: 2
 --- !u!1 &1395038131
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +609,7 @@ MonoBehaviour:
   m_FadedSnapshot: {fileID: 24597004, guid: faa5d63fc44b7934da13fa4307dcad1e, type: 2}
   m_FadeColor: {r: 1, g: 1, b: 1, a: 1}
   FadeInColor: {r: 1, g: 1, b: 1, a: 1}
-  m_FadeDuration: 3
+  m_FadeDuration: 2
   m_FadeInOnStart: 1
 --- !u!1 &1474275633
 GameObject:
@@ -616,6 +620,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1474275636}
   - 114: {fileID: 1474275634}
+  - 114: {fileID: 1474275635}
   m_Layer: 0
   m_Name: ViewController
   m_TagString: Untagged
@@ -634,6 +639,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a79d58de1f25c49948c7f4d4c5fe6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1474275635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1474275633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768364c6dd92260429997ae1df8baf1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderScale: 2
 --- !u!4 &1474275636
 Transform:
   m_ObjectHideFlags: 0

@@ -25,7 +25,10 @@ public class ThumbControl : MonoBehaviour {
     void Start()
     {
         ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
-        thumbs = Resources.LoadAll<Texture>("thumbs_regular");
+		if (view.isStereo)
+			thumbs = Resources.LoadAll<Texture>("thumbs_stereo");
+		else
+			thumbs = Resources.LoadAll<Texture>("thumbs_regular");
 
         for (int i = 0; i < thumbs.Length; i++)
         {

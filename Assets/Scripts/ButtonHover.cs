@@ -9,7 +9,7 @@ namespace VRStandardAssets.MainMenu
 	public class ButtonHover : MonoBehaviour
     {
 
-        [SerializeField] private MeshRenderer m_ScreenMesh;             // The mesh renderer who's texture will be changed.
+        [SerializeField] private TextMesh m_TextMesh;             // The mesh renderer who's texture will be changed.
         [SerializeField] private VRInteractiveItem m_VRInteractiveItem; // The VRInteractiveItem that needs to be looked at for the textures to play.
        											
 
@@ -17,7 +17,7 @@ namespace VRStandardAssets.MainMenu
 
 																		
 		void Awake () {
-			m_ScreenMesh.material.SetColor ("_Tint", Color.grey);
+			m_TextMesh.color = Color.grey;
 		}
 
         private void OnEnable ()
@@ -38,7 +38,7 @@ namespace VRStandardAssets.MainMenu
         {
 			// When the user looks at the VRInteractiveItem the tint color changes
             m_Playing = true;
-			m_ScreenMesh.material.SetColor ("_Tint", Color.white);
+			m_TextMesh.color = Color.white;
         }
 
 
@@ -46,7 +46,7 @@ namespace VRStandardAssets.MainMenu
         {
 			// When the user looks away from the VRInteractiveItem the tint color changes
             m_Playing = false;
-			m_ScreenMesh.material.SetColor ("_Tint", Color.grey);
+			m_TextMesh.color = Color.grey;
         }
 
     }
