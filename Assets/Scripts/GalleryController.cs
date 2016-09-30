@@ -10,14 +10,21 @@ public class GalleryController : MonoBehaviour
     GameObject[] leftCubes;
     GameObject[] rightCubes;
     ViewController view;
+    GameObject bc;
+    GameObject lc;
+    GameObject rc;
+    Camera cam;
+
 
     void Start()
     {
         view = GameObject.Find("ViewController").GetComponent<ViewController>();
 
-        GameObject bc = GameObject.Find("BothCube");
-        GameObject lc = GameObject.Find("LeftCube");
-        GameObject rc = GameObject.Find("RightCube");
+        cam = GameObject.Find("Camera_Right").GetComponent<Camera>();
+
+        bc = GameObject.Find("BothCube");
+        lc = GameObject.Find("LeftCube");
+        rc = GameObject.Find("RightCube");
 
         if (view.isStereo)
         {
@@ -34,6 +41,14 @@ public class GalleryController : MonoBehaviour
         }
 
         // InitializeCubeMaps(view.isStereo, index);
+    }
+
+    public void ToggleStereo()
+    {
+        cam.cullingMask ^= 1 << 9; // R
+        cam.cullingMask ^= 1 << 8; // L
+
+        Renderer toggle = GameObject.Find("Toggle").GetComponent<Renderer>();
     }
 
 /*

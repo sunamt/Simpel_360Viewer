@@ -80,7 +80,9 @@ namespace VRStandardAssets.Menu
             //For varied button interaction
             CubeController cc;
             CubeController cc2;
+            GalleryController gc;
             ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
+             
 
             string itemName = m_InteractiveItem.name;
             switch (itemName)
@@ -115,6 +117,10 @@ namespace VRStandardAssets.Menu
                     break;
                 case "Leave":
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+                    break;
+                case "Toggle":
+                    gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
+                    gc.ToggleStereo();
                     break;
 			    case "StereoscopicMenu":
                     view.isStereo = true;
