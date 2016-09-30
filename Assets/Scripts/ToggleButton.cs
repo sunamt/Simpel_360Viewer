@@ -14,7 +14,6 @@ public class ToggleButton : MonoBehaviour {
     [SerializeField]
     private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 
-
     private bool m_GazeOver;                                            // Whether the user is looking at the VRInteractiveItem currently.
 
 
@@ -70,10 +69,26 @@ public class ToggleButton : MonoBehaviour {
             OnButtonSelected(this);
 
         //For varied button interaction
-         GalleryController gc;
-        
+
         gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
         gc.ToggleStereo();
 
+        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+
+        if (view.isStereo)
+            toggleIcon.material.mainTexture = on;
+        else
+            toggleIcon.material.mainTexture = off;
     }
+
+    void Start()
+    {
+        toggleIcon.material.mainTexture = on;
+    }
+
+    GalleryController gc;
+    ViewController view;
+    [SerializeField] private Renderer toggleIcon;
+    [SerializeField] private Texture on;
+    [SerializeField] private Texture off;
 }

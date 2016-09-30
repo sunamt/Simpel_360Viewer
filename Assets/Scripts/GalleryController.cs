@@ -10,11 +10,12 @@ public class GalleryController : MonoBehaviour
     GameObject[] leftCubes;
     GameObject[] rightCubes;
     ViewController view;
+
     GameObject bc;
     GameObject lc;
     GameObject rc;
-    Camera cam;
 
+    Camera cam;
 
     void Start()
     {
@@ -47,8 +48,7 @@ public class GalleryController : MonoBehaviour
     {
         cam.cullingMask ^= 1 << 9; // R
         cam.cullingMask ^= 1 << 8; // L
-
-        Renderer toggle = GameObject.Find("Toggle").GetComponent<Renderer>();
+        view.isStereo = !view.isStereo;
     }
 
 /*
