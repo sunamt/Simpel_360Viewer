@@ -25,7 +25,7 @@ EditorBuildSettings:
     path: Assets/_Scenes_/Intro_navigation.unity
   - enabled: 0
     path: Assets/_Scenes_/3D_model.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes_/Main_menu.unity
   - enabled: 0
     path: Assets/_Scenes_/3D_model2.unity

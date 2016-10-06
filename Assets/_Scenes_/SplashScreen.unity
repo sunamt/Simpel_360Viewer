@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CameraFade: {fileID: 1447679019}
-  m_MenuSceneName: Main_menu
+  m_MenuSceneName: ImagePicker
   Timer: 5
   FadeTimer: 2
 --- !u!1 &1395038131

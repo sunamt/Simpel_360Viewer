@@ -83,7 +83,11 @@ public class ToggleButton : MonoBehaviour {
 
     void Start()
     {
-        toggleIcon.material.mainTexture = on;
+        view = GameObject.Find("ViewController").GetComponent<ViewController>();
+        if (view.isStereo)
+            toggleIcon.material.mainTexture = on;
+        else
+            toggleIcon.material.mainTexture = off;
     }
 
     GalleryController gc;

@@ -69,7 +69,8 @@ namespace VRStandardAssets.Utils
 				m_TextMeshes[i].color = new Color (m_TextMeshes [i].color.r, m_TextMeshes [i].color.b, m_TextMeshes [i].color.g, m_CurrentAlpha);
             }
 
-            m_Mesh.material.SetFloat("_Alpha", m_CurrentAlpha);
+            if(m_Mesh != null)
+                m_Mesh.material.SetFloat("_Alpha", m_CurrentAlpha);
         }
 
 

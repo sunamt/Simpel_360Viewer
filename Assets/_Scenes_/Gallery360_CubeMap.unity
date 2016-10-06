@@ -180,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &96872055
 Transform:
   m_ObjectHideFlags: 0
@@ -2160,6 +2160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FadeDuration: 0.5
+  m_ShowAngle: 60
   m_TurnAngle: 60
   m_DesiredDirection: {fileID: 294443172}
   m_Camera: {fileID: 294443172}

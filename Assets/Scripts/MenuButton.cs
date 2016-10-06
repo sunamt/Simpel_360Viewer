@@ -88,32 +88,32 @@ namespace VRStandardAssets.Menu
             switch (itemName)
             {
                 case "Forward":
-                    if (view.isStereo)
-                    {
+                    /*if (view.isStereo)
+                    {*/
                         cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
                         cc2 = GameObject.Find("RightCube").GetComponent<CubeController>();
                         cc.LoadTextures(true);
                         cc2.LoadTextures(true);
-                    }
+                    /*}
                     else
                     {
                         cc = GameObject.Find("BothCube").GetComponent<CubeController>();
                         cc.LoadTextures(true);
-                    }
+                    }*/
                     break;
                 case "Back":
-                    if (view.isStereo)
-                    {
+                   /* if (view.isStereo)
+                    {*/
                         cc = GameObject.Find("LeftCube").GetComponent<CubeController>();
                         cc2 = GameObject.Find("RightCube").GetComponent<CubeController>();
                         cc.LoadTextures(false);
                         cc2.LoadTextures(false);
-                    }
+                   /* }
                     else
                     {
                         cc = GameObject.Find("BothCube").GetComponent<CubeController>();
                         cc.LoadTextures(false);
-                    }
+                    }*/
                     break;
                 case "Leave":
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
@@ -122,14 +122,14 @@ namespace VRStandardAssets.Menu
                     gc = GameObject.Find("Gallery").GetComponent<GalleryController>();
                     gc.ToggleStereo();
                     break;
-			    case "StereoscopicMenu":
+		/*	    case "StereoscopicMenu":
                     view.isStereo = true;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
                     break;
 			    case "Regular360Menu":
                     view.isStereo = false;
                     SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
-                    break;
+                    break;*/
             }
 
             m_CameraFade.FadeInBlack(true);

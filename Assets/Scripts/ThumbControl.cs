@@ -9,7 +9,6 @@ public class ThumbControl : MonoBehaviour {
     public Texture[] thumbs;
     public Texture[] thumbsStereo;
     private List<Thumb> thumbList = new List<Thumb>();
-    private List<Thumb> thumbListStereo = new List<Thumb>();
     
     class Thumb {
         public Texture texture;
@@ -25,10 +24,8 @@ public class ThumbControl : MonoBehaviour {
     void Start()
     {
         ViewController view = GameObject.Find("ViewController").GetComponent<ViewController>();
-		if (view.isStereo)
-			thumbs = Resources.LoadAll<Texture>("thumbs_stereo");
-		else
-			thumbs = Resources.LoadAll<Texture>("thumbs_regular");
+
+        thumbs = Resources.LoadAll<Texture>("thumbs_regular");
 
         for (int i = 0; i < thumbs.Length; i++)
         {

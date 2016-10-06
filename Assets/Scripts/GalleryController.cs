@@ -20,28 +20,33 @@ public class GalleryController : MonoBehaviour
     void Start()
     {
         view = GameObject.Find("ViewController").GetComponent<ViewController>();
-
         cam = GameObject.Find("Camera_Right").GetComponent<Camera>();
 
-        bc = GameObject.Find("BothCube");
+       // bc = GameObject.Find("BothCube");
         lc = GameObject.Find("LeftCube");
         rc = GameObject.Find("RightCube");
 
-        if (view.isStereo)
-        {
-            bc.SetActive(false);
-            lc.GetComponent<CubeController>().Initialize();
-            rc.GetComponent<CubeController>().Initialize();
+        /*    if (view.isStereo)
+            {
+                bc.SetActive(false);
+                lc.GetComponent<CubeController>().Initialize();
+                rc.GetComponent<CubeController>().Initialize();
 
-        }
-        else
-        {
-            lc.SetActive(false);
-            rc.SetActive(false);
-            bc.GetComponent<CubeController>().Initialize();
-        }
-
+            }
+            else
+            {
+                lc.SetActive(false);
+                rc.SetActive(false);
+                bc.GetComponent<CubeController>().Initialize();
+            }
+        */
         // InitializeCubeMaps(view.isStereo, index);
+
+        lc.GetComponent<CubeController>().Initialize();
+        rc.GetComponent<CubeController>().Initialize();
+
+        cam.cullingMask ^= 1 << 9; // R
+        cam.cullingMask ^= 1 << 8; // L
     }
 
     public void ToggleStereo()
