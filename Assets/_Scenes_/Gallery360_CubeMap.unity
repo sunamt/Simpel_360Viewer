@@ -1146,17 +1146,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860960616}
-  m_LocalRotation: {x: 0.39254108, y: -0, z: -0, w: 0.91973454}
-  m_LocalPosition: {x: 0, y: 0, z: 9.64}
+  m_LocalRotation: {x: 0.42828664, y: -0, z: -0, w: 0.90364295}
+  m_LocalPosition: {x: 0, y: 0, z: 8.23}
   m_LocalScale: {x: 2, y: 2.0000007, z: 1.0000004}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50.711002, y: 0, z: 0}
   m_Children:
   - {fileID: 999296833}
   m_Father: {fileID: 1371930614}
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.39, y: -9.58}
+  m_AnchoredPosition: {x: -3.39, y: -11.152}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!102 &860960618
@@ -2160,7 +2160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FadeDuration: 0.5
-  m_ShowAngle: 60
+  m_ShowAngle: 40
   m_TurnAngle: 60
   m_DesiredDirection: {fileID: 294443172}
   m_Camera: {fileID: 294443172}
